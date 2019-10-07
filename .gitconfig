@@ -1,0 +1,8 @@
+[user]
+	name = Brandon Starcheus
+	email = bstarcheus@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[pager]
+	branch = false

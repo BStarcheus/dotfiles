@@ -27,13 +27,4 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
-" Colors
-
-hi Comment ctermfg=246
-hi LineNr ctermfg=039
-hi CursorLineNr ctermfg=039
-hi Contant ctermfg=196
-hi Statement ctermfg=202
-hi Special ctermfg=093
-hi PreProc ctermfg=093
-hi Identifier ctermfg=039
+colorscheme bstar

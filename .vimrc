@@ -21,6 +21,9 @@ set is
 " Set hybrid number line
 set number relativenumber
 
+" Switch tabs to 4 spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber

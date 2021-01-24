@@ -1,15 +1,14 @@
-# Set PATH for Python 3.7
-export PATH="$HOME/Library/Python/3.7/bin:${PATH}" #pip install --user
-export PATH="/usr/local/opt/python/libexec/bin:${PATH}"
+# Set PATH for Python 3.8
+export PATH="$HOME/Library/Python/3.8/bin:${PATH}" # pip install --user
+export PATH="/usr/local/opt/python@3.8/bin:${PATH}" # python3.8 from here
 
+# Set PATH for Python 3.9
+export PATH="$HOME/Library/Python/3.9/bin:${PATH}" # pip install --user
+export PATH="/usr/local/opt/python@3.9/bin:${PATH}" # python3 from here
+export PATH="/usr/local/opt/python@3.9/libexec/bin:${PATH}" # python from here
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
-
+export EDITOR='vim'
 
 # Lazy load nvm npm node
 nvm() {

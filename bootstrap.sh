@@ -7,6 +7,11 @@ fi
 
 ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
 
+# Install Plugin
+if [[ ! -d $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+fi
+
 # Install Spaceship Prompt
 if [[ ! -d $HOME/.oh-my-zsh/custom/themes/spaceship-prompt ]]; then
     git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1

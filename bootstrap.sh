@@ -31,3 +31,5 @@ ln -sfv "$DOTFILES_DIR/.vim/colors/bstar.vim" "$HOME/.vim/colors/bstar.vim"
 
 ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.gitignore_global" ~
+
+ln -sfv "$DOTFILES_DIR/.tmux.conf" ~

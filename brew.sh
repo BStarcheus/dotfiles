@@ -8,6 +8,9 @@ brew install git
 brew install vim
 brew install python
 brew install ruby
+brew install tmux
+brew install tree
+brew install htop
 
 brew install openssl
 brew install openssh

@@ -12,3 +12,13 @@ Before bootstrapping be sure to:
 $ xcode-select --install
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
+## Run
+```sh
+# After clone
+$ mv dotfiles .dotfiles
+$ cd .dotfiles
+$ ./bootstrap.sh
+$ ./brew.sh
+$ ./settings.sh
+```

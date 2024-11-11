@@ -1,48 +1,7 @@
-# Set PATH for Python 3.8
-export PATH="$HOME/Library/Python/3.8/bin:${PATH}" # pip install --user
-export PATH="/usr/local/opt/python@3.8/bin:${PATH}" # python3.8 from here
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Set PATH for Python 3.9
-export PATH="$HOME/Library/Python/3.9/bin:${PATH}" # pip install --user
-export PATH="/usr/local/opt/python@3.9/bin:${PATH}" # python3 from here
-export PATH="/usr/local/opt/python@3.9/libexec/bin:${PATH}" # python from here
+export PATH="/opt/homebrew/opt/python/libexec/bin:/opt/homebrew/opt/python3/libexec/bin:${PATH}"
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
 
-# Lazy load nvm npm node
-nvm() {
-    unset -f nvm npm node
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-    nvm "$@"
-}
-node() {
-    unset -f nvm npm node
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-    node "$@"
-}
-npm() {
-    unset -f nvm npm node
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-    npm "$@"
-}
-
-# tabtab source for serverless, sls, slss  packages
-# uninstall by removing these lines or running `tabtab uninstall [ serverless, sls, slss ]`
-[[ -f /Users/bstarcheus/.nvm/versions/node/v12.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/bstarcheus/.nvm/versions/node/v12.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-
-[[ -f /Users/bstarcheus/.nvm/versions/node/v12.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/bstarcheus/.nvm/versions/node/v12.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-[[ -f /Users/bstarcheus/.nvm/versions/node/v12.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/bstarcheus/.nvm/versions/node/v12.11.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
-
-# Update PATH for the Google Cloud SDK.
-if [ -f '/Users/bstarcheus/.google-cloud-sdk/path.zsh.inc' ]; then . '/Users/bstarcheus/.google-cloud-sdk/path.zsh.inc'; fi
-
-# Enable shell command completion for gcloud.
-if [ -f '/Users/bstarcheus/.google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/bstarcheus/.google-cloud-sdk/completion.zsh.inc'; fi
